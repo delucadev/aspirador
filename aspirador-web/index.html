@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App do Aspirador de Pó</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <div class="uk-text-center" uk-grid uk-height-viewport>
+            <div class="uk-width-1-4">
+                <div class="uk-card uk-background-secondary uk-light uk-card-body uk-padding-remove-right" uk-height-viewport>
+                    <form class="uk-text-center">                        
+                        <div class="uk-margin">
+                            <p class="uk-text-bold">ENTRADAS</p>
+                        </div>
+
+                        <div class="uk-margin">
+                            <input name="eixo-x" class="uk-input uk-form-width-medium" type="number" placeholder="Dimensão em X" min="1">
+                        </div>
+
+                        <div class="uk-margin">
+                            <input name="eixo-y" class="uk-input uk-form-width-medium" type="number" placeholder="Dimensão em Y" min="1">
+                        </div>
+                        
+                        <div class="uk-margin">
+                            <input name="percentual-sujos" class="uk-input uk-form-width-medium" type="number" placeholder="Percentual Sujos" min="0" max="100">
+                        </div>
+                        <p uk-margin>
+                            <button id="btn-gerar" type="button" class="uk-button uk-button-secondary">Gerar</button>
+                        </p>
+                        <p uk-margin>
+                            <button id="btn-limpar" type="button" class="uk-button uk-button-secondary">Limpar</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="uk-width-3-4">
+                <div id="display" class="uk-margin-remove uk-card uk-background-muted uk-card-body uk-padding-small uk-margin-small-left" uk-height-viewport>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
